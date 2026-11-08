@@ -56,6 +56,7 @@
 <script src="js/ui.js"></script>
 <script src="js/new_combat_aliens_hive.js"></script>
 <script src="js/main.js"></script>
-<script>if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js');</script>
+<!-- offline tylko na serwerze; lokalnie cache psułby podgląd zmian -->
+<script>if('serviceWorker' in navigator&&!/^(localhost|127\.)/.test(location.hostname))navigator.serviceWorker.register('sw.js');</script>
 </body>
 </html>
