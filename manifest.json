@@ -1,0 +1,16 @@
+{
+  "name": "Kosmopatologia",
+  "short_name": "Kosmopatologia",
+  "start_url": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#06050c",
+  "theme_color": "#06050c",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

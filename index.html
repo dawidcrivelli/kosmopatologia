@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kosmopatologia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon.svg">
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<canvas id="cv"></canvas>
+<div id="hud">
+  <div class="chip" id="hHull">❤ 100</div>
+  <div class="chip" id="hShield" style="display:none">🛡 0</div>
+  <div class="chip" id="hO2">O₂ 100%</div>
+  <div class="chip" id="hPow">⚡ 0/0</div>
+  <div class="chip" id="hMoney">₵ 0</div>
+  <div class="chip" id="hCrew">👥 0</div>
+  <div class="chip" id="prog"><span id="progT">Podróż</span><div id="progbar"><div id="progfill"></div></div></div>
+  <div class="chip" id="hStat" style="display:none"></div>
+</div>
+<div id="logmini"></div>
+<div id="hint"></div>
+<div id="tip"></div>
+<div id="abil"></div>
+<div id="banner"></div>
+<div id="toast"></div>
+<div id="sheet"></div>
+<div id="bar">
+  <button class="b" id="bBuild">🔧 Buduj</button>
+  <button class="b" id="bCrew">👥 Załoga</button>
+  <button class="b" id="bLog">📜 Dziennik</button>
+  <button class="b" id="bPause" aria-label="Pauza">⏸</button>
+  <button class="b" id="bSpeed" aria-label="Prędkość gry">1×</button>
+  <button class="b" id="bSnd" aria-label="Dźwięk">🔊</button>
+</div>
+<div id="modal"><div id="mbox"></div></div>
+<script src="js/init.js"></script>
+<script src="js/floor_walls_hull.js"></script>
+<script src="js/modules.js"></script>
+<script src="js/characters.js"></script>
+<script src="js/data.js"></script>
+<script src="js/state.js"></script>
+<script src="js/pathfinding.js"></script>
+<script src="js/units.js"></script>
+<script src="js/fx_helpers_world_px.js"></script>
+<script src="js/systems.js"></script>
+<script src="js/events.js"></script>
+<script src="js/special_situations.js"></script>
+<script src="js/render.js"></script>
+<script src="js/sound_procedural.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/new_combat_aliens_hive.js"></script>
+<script src="js/main.js"></script>
+<script>if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js');</script>
+</body>
+</html>
